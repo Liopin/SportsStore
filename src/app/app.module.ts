@@ -6,7 +6,7 @@ import { StoreModule } from "./store/store.module";
 
 /** import AmplifyUIAngularModule */
 import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 /** import { AppRoutingModule } from './app-routing.module'; */
 
 
@@ -15,7 +15,7 @@ import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
     AppComponent
   ],
   imports: [
-    [BrowserModule, StoreModule,AmplifyUIAngularModule]
+    [BrowserModule, StoreModule,AmplifyUIAngularModule,FormsModule, ReactiveFormsModule]
   ],
   providers: [],
   bootstrap: [AppComponent]

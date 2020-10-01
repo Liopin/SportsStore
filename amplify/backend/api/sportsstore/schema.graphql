@@ -1,0 +1,17 @@
+type Product @model {
+  id: ID!
+  name: String!
+  metadata: Metadata
+  description: String
+  price: String!
+}
+
+type Metadata {
+  category: Category
+}
+
+enum Category{
+  Foot
+  Basket
+  Tennis
+}
