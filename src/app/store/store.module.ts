@@ -1,13 +1,20 @@
-import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
-import { FormsModule } from "@angular/forms";
-import { ModelModule } from "../model/model.module";
+import { NgModule } from "@angular/core";
+import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { StoreComponent } from "./store.component";
 
 @NgModule({
-    imports: [ModelModule, BrowserModule, FormsModule],
     declarations: [StoreComponent],
-    exports: [StoreComponent]
+    exports: [StoreComponent],
+    imports: [
+        BrowserModule,
+        AmplifyUIAngularModule,
+        FormsModule,
+        ReactiveFormsModule
+      ],
+    providers: [],
+    bootstrap: [StoreComponent]
 })
 
 export class StoreModule{}

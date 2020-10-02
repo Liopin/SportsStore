@@ -7,16 +7,19 @@ import { StoreModule } from "./store/store.module";
 /** import AmplifyUIAngularModule */
 import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-/** import { AppRoutingModule } from './app-routing.module'; */
+
 
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-  imports: [
-    [BrowserModule, StoreModule,AmplifyUIAngularModule,FormsModule, ReactiveFormsModule]
-  ],
+  imports: 
+    [BrowserModule, 
+    StoreModule,
+    AmplifyUIAngularModule,
+    FormsModule, 
+    ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
