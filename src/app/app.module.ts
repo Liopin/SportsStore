@@ -6,13 +6,16 @@ import { StoreModule } from "./store/store.module";
 
 /** import AmplifyUIAngularModule */
 import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { AdminComponent } from './admin/admin.component'
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AdminComponent
   ],
   imports: 
     [BrowserModule, 

@@ -6,14 +6,6 @@
     </div>
 
     <div class="row">
-        <!-- <div class="col-3 bg-info p-2 text-white">
-            <button class="btn btn-block btn-outline-light" (click)="changeCategory()">Home</button>
-            <button class="btn btn-block btn-outline-light" 
-                    *ngFor="let cat of categories"
-                    [class.active]="cat == selectedCategory" (click)="changeCategory(cat)">
-                {{cat}}
-            </button>
-        </div>
         <div class="col-9 p-2">
             <div *ngFor="let product of products" class="card m-1 p-1 bg-light text-dark">
                 <h4>
@@ -23,30 +15,8 @@
                     </span>
                 </h4>
                 <div class="card-text bg-white p-1 text-dark">{{product.description}}</div>
-            </div> -->
-            <!-- <div class="form-inline float-left mr-1">
-                <select class="form-control" [value]="productsPerPage"
-                (change)="changePageSize($event.target.value)">
-                    <option value="3">3 par Page</option>
-                    <option value="4">4 par Page</option>
-                    <option value="6">6 par Page</option>
-                    <option value="8">8 par Page</option>
-                </select>
             </div>
-            <div class="btn-group float-right">
-                <button 
-                *ngFor="let page of pageNumbers" 
-                (click)="changePage(page)" 
-                class="btn-outline-primary"
-                [class.active]="page == selectedPage">
-                    {{page}}
-                </button>
-            </div> -->
-            <div *ngFor="let product of products">
-                <div>{{ product.price }}</div>
-                <div>{{ product.name }}</div>
-                <div>{{ product.description }}</div>
-            </div>
+
 
             <!-- Form -->
             <div class="form-body">
