@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app',
-  template: "<router-outlet></router-outlet>",
+  selector: "app",
+  template: "<store></store>"
 })
 
-export class AppComponent {
-  title = 'amplify-angular-app';
-  
-}
+export class AppComponent {}
 
 
