@@ -1,1 +1,42 @@
-<h1>hi</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col bg-dark text-white">
+            <a href="#" class="navbar-brand">Sports Store</a>
+        </div>
+    </div>
+    <!--Router / Navigation -->
+
+
+    <div class="row">
+        <div class="col-9 p-2">
+            <div *ngFor="let product of products" class="card m-1 p-1 bg-light text-dark">
+                <h4>
+                    {{product.name}}
+                    <span CLASS="badge badge-pill badge-primary float-right">
+                        {{ product.price | currency:"EUR":"symbol":"2.2-2" }}
+                    </span>
+                </h4>
+                <div class="card-text bg-white p-1 text-dark">{{product.description}}</div>
+            </div>
+
+
+            <!-- Form -->
+            <div class="form-body">
+                <form autocomplete="off" [formGroup]="createForm" (ngSubmit)="onCreate(createForm.value)">
+                  <div>
+                    <label>Name: </label>
+                    <input type="text" formControlName="name" autocomplete="off">
+                  </div>
+                  <div>
+                    <label>Description: </label>
+                    <input type="text" formControlName="description" autocomplete="off">
+                  </div>
+                  <div>
+                    <label>Price: </label>
+                    <input type="text" formControlName="price" autocomplete="off">
+                  </div>
+                  <button type="submit">Submit</button>
+                </form>
+            </div>
+    </div>
+</div>
