@@ -1,18 +1,24 @@
-<h1>User Interface</h1>
-<div class="form-body">
-    <form autocomplete="off" [formGroup]="createForm" (ngSubmit)="onCreate(createForm.value)">
-      <div>
-        <label>Name: </label>
-        <input type="text" formControlName="name" autocomplete="off">
-      </div>
-      <div>
-        <label>Description: </label>
-        <input type="text" formControlName="description" autocomplete="off">
-      </div>
-      <div>
-        <label>Price: </label>
-        <input type="text" formControlName="price" autocomplete="off">
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-</div>
+<section>
+    <h1>User Interface</h1>
+    <div class="form-body">
+        <div class="form-group" col="6">
+            <form autocomplete="off" [formGroup]="createForm" (ngSubmit)="onCreate(createForm.value)">
+                <div>
+                    <label>Name: </label>
+                    <input type="text" formControlName="name" autocomplete="off" class="form-control col-sm-4">
+                </div>
+                <div>
+                    <label>Description: </label>
+                    <input type="text" formControlName="description" autocomplete="off" class="form-control col-sm-4">
+                </div>
+                <div>
+                    <label>Price: </label>
+                    <input type="text" formControlName="price" autocomplete="off" class="form-control col-sm-4">
+                </div>
+                
+                <button type="submit" class="btn btn-primary mb -2">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</section>
