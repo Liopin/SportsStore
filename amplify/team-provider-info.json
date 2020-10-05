@@ -10,6 +10,14 @@
             "StackName": "amplify-sportsstore-dev-191650",
             "StackId": "arn:aws:cloudformation:us-east-1:748349126893:stack/amplify-sportsstore-dev-191650/e73ca460-0409-11eb-93fc-127c6c2d7f71",
             "AmplifyAppId": "d24i7gbha5e26d"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d24i7gbha5e26d",
+                    "type": "cicd"
+                }
+            }
         }
     }
 }
