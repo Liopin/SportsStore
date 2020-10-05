@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
-import { StoreComponent } from './store/store.component';
+import { StoreComponent } from '../app/store/store.component';
 
 const routes: Routes = [
   { path: 'home', component: AppComponent },
