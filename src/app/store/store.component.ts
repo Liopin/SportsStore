@@ -3,7 +3,8 @@ import { APIService } from '../API.service';
 import { Product } from '../../types/product';
 
 @Component({
-    templateUrl: "store.component.html"
+    templateUrl: "store.component.html",
+    styleUrls: ['store.component.css']
 })
 
 export class StoreComponent implements OnInit{
